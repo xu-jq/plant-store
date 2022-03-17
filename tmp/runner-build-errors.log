@@ -1,0 +1,2 @@
+# plant/middlewares
+middlewares\AuthMiddleware.go:33:26: syntax error: unexpected =, expecting comma or )
