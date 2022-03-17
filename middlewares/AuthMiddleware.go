@@ -2,11 +2,13 @@ package middlewares
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"net/http"
+	"strings"
+
+	"github.com/gin-gonic/gin"
+
 	"plant/common"
 	"plant/model"
-	"strings"
 )
 
 func AuthMiddleware() gin.HandlerFunc {
