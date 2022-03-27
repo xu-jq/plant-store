@@ -1,0 +1,84 @@
+swagger: "2.0"
+info:
+  title: plant_store
+paths:
+  /user/info:
+    get:
+      tags:
+      - user
+      description: 获取用户信息接口
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Json'
+        "500":
+          description: '{object} models.Json'
+  /user/login:
+    post:
+      tags:
+      - user
+      description: 用户登录接口
+      parameters:
+      - in: formData
+        name: username
+        description: 用户名
+        type: string
+      - in: formData
+        name: password
+        description: 密码
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Json'
+        "500":
+          description: '{object} models.Json'
+  /user/register:
+    post:
+      tags:
+      - user
+      description: 用户注册接口
+      parameters:
+      - in: formData
+        name: name1
+        description: 姓
+        type: string
+      - in: formData
+        name: name2
+        description: 名
+        type: string
+      - in: formData
+        name: email
+        description: 邮箱
+        type: string
+      - in: formData
+        name: phone
+        description: 手机号码
+        type: string
+      - in: formData
+        name: password
+        description: 密码
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Json'
+        "500":
+          description: '{object} models.Json'
+definitions:
+  165.0xc000384780.false:
+    title: "false"
+    type: object
+  models.Json:
+    title: Json
+    type: object
+    properties:
+      data:
+        $ref: '#/definitions/165.0xc000384780.false'
+      flag:
+        type: boolean
+      message:
+        type: string

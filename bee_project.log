@@ -1,0 +1,272 @@
+2022/03/22 14:02:13.626  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/22 14:05:54.829  [C] [config.go:190]  the request url is  /user/register
+2022/03/22 14:05:54.829  [C] [config.go:191]  Handler crashed with error can't find templatefile in the path:views/usercontroller/post.tpl
+2022/03/22 14:05:54.830  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/22 14:05:54.830  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/template.go:75
+2022/03/22 14:05:54.831  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:311
+2022/03/22 14:05:54.831  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:262
+2022/03/22 14:05:54.832  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:239
+2022/03/22 14:05:54.832  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:895
+2022/03/22 14:05:54.832  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/22 14:05:54.833  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/22 14:05:54.833  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/22 14:05:54.833  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/22 14:05:54.834  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/22 14:09:51.496  [C] [config.go:190]  the request url is  /user/register
+2022/03/22 14:09:51.496  [C] [config.go:191]  Handler crashed with error can't find templatefile in the path:views/usercontroller/post.tpl
+2022/03/22 14:09:51.496  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/22 14:09:51.497  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/template.go:75
+2022/03/22 14:09:51.497  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:311
+2022/03/22 14:09:51.498  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:262
+2022/03/22 14:09:51.498  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/controller.go:239
+2022/03/22 14:09:51.498  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:895
+2022/03/22 14:09:51.499  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/22 14:09:51.499  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/22 14:09:51.499  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/22 14:09:51.500  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/22 14:09:51.500  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/22 14:12:07.724  [C] [server.go:188]  ListenAndServe:  http: Server closed 3928
+2022/03/22 14:22:30.509  [C] [server.go:188]  ListenAndServe:  http: Server closed 7100
+2022/03/23 22:22:23.197  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/23 22:23:10.974  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:23:10.975  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:23:37.103  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:23:37.104  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:24:17.413  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:24:17.414  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:24:30.181  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:24:30.181  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:29:24.814  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:29:24.815  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:29:30.165  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:29:30.166  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:52.348  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:52.349  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:55.229  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:55.229  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:57.501  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:31:57.501  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:29.745  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:29.746  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:31.585  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:31.585  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:33.777  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:33.777  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:41.377  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:33:41.379  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:40:11.842  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:40:11.843  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:43:53.716  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:43:53.717  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:49:46.207  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:49:46.207  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:01.164  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:01.164  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:06.435  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:06.435  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:38.653  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 22:54:38.653  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:03:08.985  [W] [base_controller.go:93]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:03:08.985  [W] [base_controller.go:68]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:03:43.797  [W] [base_controller.go:93]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:03:43.798  [W] [base_controller.go:68]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:05:42.018  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:05:42.019  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:08:38.839  [C] [server.go:188]  ListenAndServe:  http: Server closed 3068
+2022/03/23 23:11:01.956  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:11:01.956  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/23 23:19:04.790  [C] [server.go:188]  ListenAndServe:  http: Server closed 1568
+2022/03/25 11:55:02.424  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/25 11:56:08.947  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 11:56:08.947  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 11:56:23.718  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 11:56:23.719  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:08:28.774  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:08:28.774  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:08:38.482  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:08:38.482  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:10:40.069  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:10:40.069  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:10:46.882  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 12:10:46.883  [W] [base_controller.go:67]  parse err: invalid character 'a' in literal null (expecting 'u')
+2022/03/25 13:49:04.294  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/25 13:49:17.767  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/25 13:49:23.856  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/25 14:21:05.270  [W] [user_logic.go:33]  login failed
+2022/03/25 15:59:10.921  [W] [user_logic.go:33]  login failed
+2022/03/25 16:51:55.712  [C] [server.go:188]  ListenAndServe:  http: Server closed 9240
+2022/03/26 13:50:39.934  [C] [server.go:188]  ListenAndServe:  http: Server closed 8360
+2022/03/26 14:02:39.477  [C] [server.go:188]  ListenAndServe:  http: Server closed 6236
+2022/03/27 13:56:35.577  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/27 13:58:40.957  [W] [user_logic.go:33]  login failed
+2022/03/27 13:59:07.320  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 13:59:07.321  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 13:59:07.321  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 13:59:07.321  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 13:59:07.321  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 13:59:07.322  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 13:59:07.322  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:46
+2022/03/27 13:59:07.323  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 13:59:07.323  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 13:59:07.323  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 13:59:07.323  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 13:59:07.324  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 13:59:07.324  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 13:59:07.324  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 13:59:07.324  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 13:59:53.775  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 13:59:53.776  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 13:59:53.779  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 13:59:53.785  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 13:59:53.804  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 13:59:53.809  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 13:59:53.810  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:48
+2022/03/27 13:59:53.811  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 13:59:53.811  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 13:59:53.812  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 13:59:53.816  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 13:59:53.816  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 13:59:53.817  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 13:59:53.818  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 13:59:53.818  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:00:49.121  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:00:49.121  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:00:49.121  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:00:49.122  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:00:49.122  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 14:00:49.123  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:00:49.123  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:48
+2022/03/27 14:00:49.123  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:00:49.123  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:00:49.124  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:00:49.124  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:00:49.124  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:00:49.125  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:00:49.125  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:00:49.125  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:04:07.536  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:04:07.537  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:04:07.537  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:04:07.537  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:04:07.537  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 14:04:07.538  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:04:07.538  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:04:07.538  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:04:07.538  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:04:07.539  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:04:07.539  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:04:07.539  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:04:07.539  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:04:07.540  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:04:07.540  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:04:36.333  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:04:36.333  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:04:36.334  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:04:36.334  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:04:36.334  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 14:04:36.334  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:04:36.334  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:04:36.335  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:04:36.335  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:04:36.335  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:04:36.335  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:04:36.335  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:04:36.335  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:04:36.335  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:04:36.336  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:06:00.674  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:06:00.675  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:06:00.675  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:06:00.675  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:06:00.675  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:42
+2022/03/27 14:06:00.676  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:06:00.676  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:06:00.676  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:06:00.676  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:06:00.676  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:06:00.677  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:06:00.677  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:06:00.677  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:06:00.678  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:06:00.678  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:07:29.596  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:07:29.597  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:07:29.597  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:07:29.598  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:07:29.598  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:43
+2022/03/27 14:07:29.598  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:07:29.598  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:07:29.599  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:07:29.599  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:07:29.599  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:07:29.600  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:07:29.600  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:07:29.600  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:07:29.601  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:07:29.601  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:19:33.917  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:19:33.918  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:19:33.918  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:19:33.918  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:19:33.919  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:46
+2022/03/27 14:19:33.919  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:19:33.919  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:19:33.920  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:19:33.921  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:19:33.921  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:19:33.922  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:19:33.922  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:19:33.922  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:19:33.923  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:19:33.923  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:20:57.171  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:20:57.172  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:20:57.172  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:20:57.173  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:20:57.173  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:46
+2022/03/27 14:20:57.173  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:20:57.174  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:20:57.174  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:20:57.174  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:20:57.174  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:20:57.175  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:20:57.175  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:20:57.175  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:20:57.175  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:20:57.176  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:24:31.630  [C] [config.go:190]  the request url is  /user/info
+2022/03/27 14:24:31.631  [C] [config.go:191]  Handler crashed with error <RawSeter.QueryRows> all args must be use ptr slice
+2022/03/27 14:24:31.631  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/03/27 14:24:31.632  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm_raw.go:455
+2022/03/27 14:24:31.632  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/models/user.go:46
+2022/03/27 14:24:31.633  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/logics/user_logic.go:39
+2022/03/27 14:24:31.633  [C] [config.go:197]  D:/Go_WorkSpace/bee_project/controllers/user_controller.go:50
+2022/03/27 14:24:31.633  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/03/27 14:24:31.633  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/03/27 14:24:31.634  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/03/27 14:24:31.634  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/03/27 14:24:31.634  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/03/27 14:24:31.635  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/03/27 14:24:31.635  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/03/27 14:24:31.635  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/03/27 14:32:44.336  [W] [user_logic.go:41]  get user info failed
+2022/03/27 14:33:33.610  [W] [user_logic.go:41]  get user info failed
+2022/03/27 14:33:37.775  [W] [user_logic.go:41]  get user info failed
+2022/03/27 14:34:51.036  [W] [user_logic.go:41]  get user info failed
+2022/03/27 15:21:57.540  [C] [server.go:188]  ListenAndServe:  http: Server closed 14304
+2022/03/27 15:24:25.521  [C] [server.go:188]  ListenAndServe:  http: Server closed 1904
+2022/03/27 15:29:01.461  [C] [server.go:188]  ListenAndServe:  http: Server closed 12564
+2022/03/27 15:33:54.547  [C] [server.go:188]  ListenAndServe:  http: Server closed 12116
+2022/03/27 15:36:10.205  [C] [server.go:188]  ListenAndServe:  http: Server closed 2844
+2022/03/27 15:36:54.693  [C] [server.go:188]  ListenAndServe:  http: Server closed 3488
+2022/03/27 15:39:15.567  [C] [server.go:188]  ListenAndServe:  http: Server closed 9920
+2022/03/27 15:46:14.696  [C] [server.go:188]  ListenAndServe:  http: Server closed 1636
+2022/03/27 16:07:41.526  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:10:22.036  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:10:41.585  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:14:45.140  [C] [server.go:188]  ListenAndServe:  http: Server closed 10948
+2022/03/27 16:16:49.802  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:19:18.531  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:19:19.581  [W] [user_logic.go:21]  用户名重复，注册失败
+2022/03/27 16:21:09.297  [W] [user_logic.go:33]  login failed
+2022/03/27 16:27:23.411  [W] [user_logic.go:41]  get user info failed
