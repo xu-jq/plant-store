@@ -21,6 +21,7 @@ type UserController struct {
 // @Failure 500 {object} models.Json
 // @router /register [post]
 func (c *UserController) UserRegister() {
+	//TODO...最好将客户端传过来的参数集合做成结构体，并使用封装好的inputCheck函数获取参数并反序列化到对应结构体上
 	name1 := c.GetString("name1")
 	name2 := c.GetString("name2")
 	name := name1 + name2
@@ -31,6 +32,7 @@ func (c *UserController) UserRegister() {
 		Password: c.GetString("pwd"),
 	}
 	ok, resp := logics.CreatNewUser(user)
+	//TODO...下面这句删除，c.ServeResponse函数已经是把响应封装了
 	c.Ctx.Output.JSON(resp, true, true)
 	if !ok {
 		c.ServeResponse(base.ErrDatabase)
@@ -47,6 +49,7 @@ func (c *UserController) UserRegister() {
 // @Failure 500 {object} models.Json
 // @router /login [post]
 func (c *UserController) UserLogin() {
+	//TODO...参数获取使用c.InputCheck
 	user := models.User{Username: c.GetString("username"), Password: c.GetString("password")}
 	ok, resp := logics.UserLogin(user)
 	c.Ctx.Output.JSON(resp, true, true)
@@ -67,5 +70,6 @@ func (c *UserController) UserLogin() {
 func (c *UserController) UserInfo() {
 	username := c.GetSession("user")
 	resp := logics.Info(username)
+	//TODO...响应使用c.ServeResponse
 	c.Ctx.Output.JSON(resp, true, true)
 }
