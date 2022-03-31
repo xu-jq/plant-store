@@ -1,16 +1,18 @@
 package main
 
 import (
-	_ "bee_project/routers"
 	"encoding/json"
 	"flag"
+	"os"
+
 	"github.com/beego/beego/v2/client/orm"
 	"github.com/beego/beego/v2/core/logs"
 	"github.com/beego/beego/v2/server/web"
 	beego "github.com/beego/beego/v2/server/web"
 	"github.com/beego/beego/v2/server/web/filter/cors"
 	_ "github.com/go-sql-driver/mysql"
-	"os"
+
+	_ "bee_project/routers"
 )
 
 //initMySQL 初始化mysql
@@ -106,6 +108,7 @@ func loadAppConfig() error {
 }
 
 func main() {
+	//TODO...过滤器这一部分放到routers那里
 	web.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
 		AllowAllOrigins:  true,
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
@@ -113,24 +116,28 @@ func main() {
 		ExposeHeaders:    []string{"Content-Length", "Access-Control-Allow-Origin", "Access-Control-Allow-Headers", "Content-Type"},
 		AllowCredentials: true,
 	}))
+	//TODO...这种系统运行信息使用info级别，不要用debug，因为实际生产环境会调整日志级别，不会输出debug级别的日志
 	logs.Debug("load app.conf...")
 	if err := loadAppConfig(); err != nil {
 		logs.Error("load app conf failed, err: %s", err.Error())
 		os.Exit(1)
 	}
 
+	//TODO...使用info
 	logs.Debug("init logger...")
 	if err := initLogger(); err != nil {
 		logs.Error("init logger conf failed, err: %s", err.Error())
 		os.Exit(1)
 	}
 
+	//TODO...使用info
 	logs.Debug("init mysql...")
 	if err := initMySQL(); err != nil {
 		logs.Error("init mysql failed, err: %s", err.Error())
 		os.Exit(1)
 	}
 
+	//TODO...使用info
 	logs.Debug("beego start...")
 	web.Run()
 }
