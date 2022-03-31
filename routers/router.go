@@ -1,5 +1,8 @@
-// Package routers @APIVersion 1.0.0
+// Package routers
+// @APIVersion 2.0.0
 // @Title plant_store
+// @Description plant_store APIs
+// @Contact 604862834@qq.com
 package routers
 
 import (
@@ -23,4 +26,6 @@ func init() {
 	beego.Router("/user/register", &controllers.UserController{}, "post:UserRegister")
 	beego.Router("/user/login", &controllers.UserController{}, "post:UserLogin")
 	beego.Router("/user/info", &controllers.UserController{}, "get:UserInfo")
+	beego.Router("/user/change_info", &controllers.UserController{}, "get:ChangeInfo")
+
 }

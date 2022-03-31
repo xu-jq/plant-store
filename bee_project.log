@@ -270,3 +270,57 @@
 2022/03/27 16:19:19.581  [W] [user_logic.go:21]  用户名重复，注册失败
 2022/03/27 16:21:09.297  [W] [user_logic.go:33]  login failed
 2022/03/27 16:27:23.411  [W] [user_logic.go:41]  get user info failed
+2022/03/27 16:56:25.270  [C] [server.go:188]  ListenAndServe:  http: Server closed 7632
+2022/03/27 20:28:46.971  [C] [server.go:188]  ListenAndServe:  http: Server closed 18244
+2022/03/28 19:07:57.086  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/28 19:11:03.038  [C] [server.go:188]  ListenAndServe:  http: Server closed 9988
+2022/03/28 19:14:23.410  [C] [server.go:188]  ListenAndServe:  http: Server closed 11516
+2022/03/28 19:14:58.159  [C] [server.go:188]  ListenAndServe:  http: Server closed 8156
+2022/03/28 19:16:49.400  [C] [server.go:188]  ListenAndServe:  http: Server closed 13768
+2022/03/28 19:17:28.131  [C] [server.go:188]  ListenAndServe:  http: Server closed 12176
+2022/03/28 20:16:25.070  [C] [server.go:188]  ListenAndServe:  http: Server closed 12668
+2022/03/29 13:25:55.527  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/29 13:26:33.636  [W] [user_logic.go:41]  user not login
+2022/03/29 13:52:40.463  [C] [server.go:188]  ListenAndServe:  http: Server closed 7232
+2022/03/29 21:13:58.850  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, invalid connection
+2022/03/29 21:14:04.474  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/29 21:14:56.422  [W] [user_logic.go:41]  user not login
+2022/03/29 21:15:08.192  [W] [user_logic.go:41]  user not login
+2022/03/29 21:16:13.539  [W] [user_logic.go:41]  user not login
+2022/03/29 22:48:09.466  [C] [server.go:188]  ListenAndServe:  http: Server closed 15984
+2022/03/31 15:01:37.925  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, invalid connection
+2022/03/31 15:05:19.245  [W] [user_logic.go:41]  user not login
+2022/03/31 15:05:23.152  [W] [user_logic.go:41]  user not login
+2022/03/31 15:09:59.586  [W] [user_logic.go:41]  user not login
+2022/03/31 15:14:16.498  [W] [user_logic.go:42]  user not login
+2022/03/31 15:23:17.242  [C] [server.go:188]  ListenAndServe:  http: Server closed 8944
+2022/03/31 15:27:02.399  [W] [user_logic.go:41]  user not login
+2022/03/31 19:34:52.325  [C] [server.go:188]  ListenAndServe:  http: Server closed 10136
+2022/03/31 19:42:55.162  [C] [server.go:188]  ListenAndServe:  http: Server closed 10644
+2022/03/27 16:56:25.270  [C] [server.go:188]  ListenAndServe:  http: Server closed 7632
+2022/03/27 20:28:46.971  [C] [server.go:188]  ListenAndServe:  http: Server closed 18244
+2022/03/28 19:07:57.086  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/28 19:11:03.038  [C] [server.go:188]  ListenAndServe:  http: Server closed 9988
+2022/03/28 19:14:23.410  [C] [server.go:188]  ListenAndServe:  http: Server closed 11516
+2022/03/28 19:14:58.159  [C] [server.go:188]  ListenAndServe:  http: Server closed 8156
+2022/03/28 19:16:49.400  [C] [server.go:188]  ListenAndServe:  http: Server closed 13768
+2022/03/28 19:17:28.131  [C] [server.go:188]  ListenAndServe:  http: Server closed 12176
+2022/03/28 20:16:25.070  [C] [server.go:188]  ListenAndServe:  http: Server closed 12668
+2022/03/29 13:25:55.527  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/29 13:26:33.636  [W] [user_logic.go:41]  user not login
+2022/03/29 13:52:40.463  [C] [server.go:188]  ListenAndServe:  http: Server closed 7232
+2022/03/29 21:13:58.850  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, invalid connection
+2022/03/29 21:14:04.474  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/03/29 21:14:56.422  [W] [user_logic.go:41]  user not login
+2022/03/29 21:15:08.192  [W] [user_logic.go:41]  user not login
+2022/03/29 21:16:13.539  [W] [user_logic.go:41]  user not login
+2022/03/29 22:48:09.466  [C] [server.go:188]  ListenAndServe:  http: Server closed 15984
+2022/03/31 15:01:37.925  [E] [main.go:130]  init mysql failed, err: register db Ping `default`, invalid connection
+2022/03/31 15:05:19.245  [W] [user_logic.go:41]  user not login
+2022/03/31 15:05:23.152  [W] [user_logic.go:41]  user not login
+2022/03/31 15:09:59.586  [W] [user_logic.go:41]  user not login
+2022/03/31 15:14:16.498  [W] [user_logic.go:42]  user not login
+2022/03/31 15:23:17.242  [C] [server.go:188]  ListenAndServe:  http: Server closed 8944
+2022/03/31 15:27:02.399  [W] [user_logic.go:41]  user not login
+2022/03/31 19:34:52.325  [C] [server.go:188]  ListenAndServe:  http: Server closed 10136
+2022/03/31 19:42:55.162  [C] [server.go:188]  ListenAndServe:  http: Server closed 10644

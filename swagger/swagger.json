@@ -2,9 +2,46 @@
     "swagger": "2.0",
     "info": {
         "title": "plant_store",
-        "contact": {}
+        "description": "plant_store APIs",
+        "version": "2.0.0",
+        "contact": {
+            "email": "604862834@qq.com"
+        }
     },
     "paths": {
+        "/user/change_info": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "description": "用户修改信息接口",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "email",
+                        "description": "邮箱",
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "phone",
+                        "description": "手机号码",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/models.Json"
+                        }
+                    },
+                    "500": {
+                        "description": "{object} models.Json"
+                    }
+                }
+            }
+        },
         "/user/info": {
             "get": {
                 "tags": [
@@ -110,7 +147,7 @@
         }
     },
     "definitions": {
-        "165.0xc000384780.false": {
+        "165.0xc0003a6f30.false": {
             "title": "false",
             "type": "object"
         },
@@ -119,7 +156,7 @@
             "type": "object",
             "properties": {
                 "data": {
-                    "$ref": "#/definitions/165.0xc000384780.false"
+                    "$ref": "#/definitions/165.0xc0003a6f30.false"
                 },
                 "flag": {
                     "type": "boolean"

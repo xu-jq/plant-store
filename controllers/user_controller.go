@@ -69,3 +69,17 @@ func (c *UserController) UserInfo() {
 	resp := logics.Info(username)
 	c.Ctx.Output.JSON(resp, true, true)
 }
+
+// ChangeInfo @Title 修改信息
+// @Description 用户修改信息接口
+// @Param email query string false "邮箱"
+// @Param phone query string false "手机号码"
+// @Success 200 {object} models.Json
+// @Failure 500 {object} models.Json
+// @router /change_info [get]
+func (c *UserController) ChangeInfo() {
+	session := c.GetSession("user")
+	user := models.User{Phone: c.GetString("phone"), Email: c.GetString("email")}
+	resp := logics.ChangeInfo(session, user)
+	c.Ctx.Output.JSON(resp, true, true)
+}
