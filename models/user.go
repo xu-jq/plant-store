@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"github.com/beego/beego/v2/client/orm"
 )
 
@@ -45,17 +44,4 @@ func GetInfo(username interface{}) (User, error) {
 		return user, err
 	}
 	return user, nil
-}
-
-func UpdateInfo(user User, username interface{}) error {
-	o := orm.NewOrm()
-	err := o.Raw("UPDATE user SET email = ? , phone = ? WHERE username = ?", user.Email, user.Phone, username).QueryRow(&user)
-	if err != nil {
-		return err
-	}
-	if err != nil {
-		fmt.Println("err:", err)
-		return err
-	}
-	return nil
 }

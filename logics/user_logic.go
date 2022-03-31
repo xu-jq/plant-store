@@ -35,47 +35,22 @@ func UserLogin(user models.User) (bool, models.Json) {
 	return false, resp
 }
 
-func CheckLogin(username interface{}) (bool, models.Json) {
+func Info(username interface{}) models.Json {
 	user, err := models.GetInfo(username)
 	if err != nil || user.Id == 0 {
-		logs.Warn("user not login")
+		logs.Warn("get user info failed")
 		resp := models.Json{
 			Flag:    false,
 			Message: "请先登录",
 			Data:    user,
 		}
-		return false, resp
+		return resp
 	}
+	logs.Info("get user info success,username[%s]", username)
 	resp := models.Json{
 		Flag:    true,
 		Message: "get user info success",
 		Data:    user,
-	}
-	return true, resp
-}
-
-func Info(username interface{}) models.Json {
-	_, resp := CheckLogin(username)
-	return resp
-}
-
-func ChangeInfo(session interface{}, user models.User) models.Json {
-	login, resp := CheckLogin(session)
-	if login {
-		oldUser, _ := models.GetInfo(session)
-		newUser := models.User{}
-		if user.Phone == "" {
-			newUser.Phone = oldUser.Phone
-		} else {
-			newUser.Phone = user.Phone
-		}
-		if user.Email == "" {
-			newUser.Email = oldUser.Email
-		} else {
-			newUser.Email = user.Email
-		}
-		models.UpdateInfo(newUser, session)
-		return models.Json{Flag: true, Message: "更新数据成功"}
 	}
 	return resp
 }
