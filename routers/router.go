@@ -3,8 +3,9 @@
 package routers
 
 import (
-	"bee_project/controllers"
 	beego "github.com/beego/beego/v2/server/web"
+
+	"bee_project/controllers"
 )
 
 func init() {
