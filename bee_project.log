@@ -324,3 +324,221 @@
 2022/03/31 15:27:02.399  [W] [user_logic.go:41]  user not login
 2022/03/31 19:34:52.325  [C] [server.go:188]  ListenAndServe:  http: Server closed 10136
 2022/03/31 19:42:55.162  [C] [server.go:188]  ListenAndServe:  http: Server closed 10644
+2022/04/01 19:27:00.996  [C] [server.go:188]  ListenAndServe:  http: Server closed 17556
+2022/04/01 19:27:36.836  [C] [server.go:188]  ListenAndServe:  http: Server closed 7196
+2022/04/01 19:35:00.318  [W] [user_logic.go:37]  login failed
+2022/04/01 19:35:16.203  [W] [user_logic.go:37]  login failed
+2022/04/01 19:41:16.230  [W] [user_logic.go:20]  用户名重复，注册失败
+2022/04/01 19:58:16.777  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:16.778  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:16.778  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:16.778  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:16.778  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:16.779  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:16.779  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:16.779  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:16.780  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:16.780  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:16.780  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:16.780  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:16.781  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:20.675  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:20.675  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:20.675  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:20.675  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:20.676  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:20.676  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:20.676  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:20.676  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:20.677  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:20.677  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:20.677  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:20.678  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:20.678  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:21.338  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:21.338  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:21.338  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:21.339  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:21.339  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:21.339  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:21.339  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:21.340  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:21.340  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:21.340  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:21.340  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:21.341  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:21.341  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:21.877  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:21.877  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:21.878  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:21.878  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:21.879  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:21.879  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:21.880  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:21.880  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:21.881  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:21.884  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:21.884  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:21.885  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:21.885  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:22.324  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:22.324  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:22.325  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:22.325  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:22.325  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:22.326  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:22.326  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:22.326  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:22.326  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:22.327  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:22.327  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:22.327  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:22.327  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:23.256  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:23.257  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:23.258  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:23.258  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:23.258  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:23.259  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:23.259  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:23.259  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:23.259  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:23.259  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:23.260  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:23.260  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:23.260  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:25.608  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:25.608  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:25.609  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:25.609  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:25.609  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:25.610  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:25.610  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:25.610  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:25.611  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:25.611  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:25.611  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:25.612  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:25.612  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:26.274  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:26.275  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:26.275  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:26.275  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:26.276  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:26.276  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:26.276  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:26.277  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:26.277  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:26.277  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:26.278  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:26.278  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:26.278  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 19:58:26.937  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 19:58:26.937  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 19:58:26.937  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 19:58:26.938  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 19:58:26.938  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 19:58:26.939  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 19:58:26.939  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 19:58:26.939  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 19:58:26.939  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 19:58:26.940  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 19:58:26.940  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 19:58:26.940  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 19:58:26.940  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 20:00:26.547  [C] [server.go:188]  ListenAndServe:  http: Server closed 9984
+2022/04/01 20:00:38.984  [C] [config.go:190]  the request url is  /user/info
+2022/04/01 20:00:38.985  [C] [config.go:191]  Handler crashed with error interface conversion: interface {} is nil, not string
+2022/04/01 20:00:38.985  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/01 20:00:38.985  [C] [config.go:197]  D:/go/src/runtime/iface.go:261
+2022/04/01 20:00:38.986  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/user_controller.go:69
+2022/04/01 20:00:38.987  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/01 20:00:38.987  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/01 20:00:38.987  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/01 20:00:38.988  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/01 20:00:38.989  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/01 20:00:38.989  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/01 20:00:38.989  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/01 20:00:38.990  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/01 22:10:34.488  [C] [server.go:188]  ListenAndServe:  http: Server closed 13516
+2022/04/06 14:44:36.961  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'u' looking for beginning of value
+2022/04/06 14:44:36.962  [W] [base_controller.go:67]  parse err: invalid character 'u' looking for beginning of value
+2022/04/06 14:46:14.664  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:46:14.665  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:46:20.936  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:46:20.936  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:49:19.473  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:49:19.474  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:50:07.197  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:50:07.198  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:50:49.390  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:50:49.390  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:32.202  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:32.203  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:44.342  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:44.343  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:46.041  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 14:51:46.042  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:12:01.140  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'u' looking for beginning of value
+2022/04/06 15:12:01.141  [W] [base_controller.go:67]  parse err: invalid character 'u' looking for beginning of value
+2022/04/06 15:13:19.347  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:13:19.348  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:14:32.082  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:14:32.083  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:15:14.148  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:15:14.149  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:15:17.058  [W] [base_controller.go:92]  unmarshal request body failed, err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:15:17.059  [W] [base_controller.go:67]  parse err: json: cannot unmarshal string into Go value of type messages.UserRegisterReq
+2022/04/06 15:21:02.595  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:02.596  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:21:11.804  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:11.804  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:21:21.454  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:21.454  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:21:23.925  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:23.926  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:21:24.968  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:24.968  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:21:42.971  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character '"' after object key:value pair
+2022/04/06 15:21:42.972  [W] [base_controller.go:67]  parse err: invalid character '"' after object key:value pair
+2022/04/06 15:39:24.953  [C] [server.go:188]  ListenAndServe:  http: Server closed 15928
+2022/04/07 22:06:51.228  [W] [user_logic.go:41]  login failed
+2022/04/07 22:12:44.227  [W] [base_controller.go:92]  unmarshal request body failed, err: invalid character 'u' looking for beginning of value
+2022/04/07 22:12:44.227  [W] [base_controller.go:67]  parse err: invalid character 'u' looking for beginning of value
+2022/04/07 22:53:07.906  [C] [server.go:188]  ListenAndServe:  http: Server closed 7136
+2022/04/09 16:58:40.906  [E] [main.go:123]  init mysql failed, err: register db Ping `default`, invalid connection
+2022/04/09 16:58:45.974  [E] [main.go:123]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/04/09 18:08:59.391  [C] [server.go:188]  ListenAndServe:  http: Server closed 6612
+2022/04/09 19:49:53.820  [C] [server.go:188]  ListenAndServe:  http: Server closed 17476
+2022/04/09 21:51:21.207  [C] [server.go:188]  ListenAndServe:  http: Server closed 11576
+2022/04/09 21:55:37.516  [C] [server.go:188]  ListenAndServe:  http: Server closed 2912
+2022/04/09 22:06:20.088  [C] [server.go:188]  ListenAndServe:  http: Server closed 16788
+2022/04/11 10:44:45.258  [C] [server.go:188]  ListenAndServe:  http: Server closed 15332
+2022/04/11 10:47:48.127  [C] [server.go:188]  ListenAndServe:  http: Server closed 17152
+2022/04/11 11:13:38.352  [C] [server.go:188]  ListenAndServe:  http: Server closed 1148
+2022/04/13 11:09:05.477  [W] [user_logic.go:41]  login failed
+2022/04/13 11:32:25.357  [C] [server.go:188]  ListenAndServe:  http: Server closed 10640
+2022/04/14 16:21:13.522  [C] [server.go:188]  ListenAndServe:  http: Server closed 9408
+2022/04/15 13:57:08.906  [W] [user_logic.go:42]  login failed
+2022/04/15 14:24:25.212  [C] [server.go:188]  ListenAndServe:  http: Server closed 12884
+2022/04/15 17:38:32.596  [E] [main.go:123]  init mysql failed, err: register db Ping `default`, dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it.
+2022/04/15 17:40:30.035  [C] [server.go:188]  ListenAndServe:  http: Server closed 12516
+2022/04/15 18:12:35.596  [C] [server.go:188]  ListenAndServe:  http: Server closed 3240
+2022/04/16 13:04:44.159  [C] [config.go:190]  the request url is  /cart/delete
+2022/04/16 13:04:44.159  [C] [config.go:191]  Handler crashed with error <Ormer> table: `.int` not found, make sure it was registered with `RegisterModel()`
+2022/04/16 13:04:44.160  [C] [config.go:197]  D:/go/src/runtime/panic.go:1038
+2022/04/16 13:04:44.160  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm.go:120
+2022/04/16 13:04:44.160  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm.go:273
+2022/04/16 13:04:44.161  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/client/orm/orm.go:270
+2022/04/16 13:04:44.161  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/models/cart.go:40
+2022/04/16 13:04:44.161  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/logics/cart_logic.go:50
+2022/04/16 13:04:44.161  [C] [config.go:197]  C:/Users/admin/Desktop/plant_store-feature-master-lqj/controllers/cart_controller.go:64
+2022/04/16 13:04:44.163  [C] [config.go:197]  D:/go/src/reflect/value.go:543
+2022/04/16 13:04:44.164  [C] [config.go:197]  D:/go/src/reflect/value.go:339
+2022/04/16 13:04:44.164  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:883
+2022/04/16 13:04:44.165  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/filter.go:81
+2022/04/16 13:04:44.166  [C] [config.go:197]  C:/Users/admin/go/pkg/mod/github.com/beego/beego/v2@v2.0.1/server/web/router.go:664
+2022/04/16 13:04:44.166  [C] [config.go:197]  D:/go/src/net/http/server.go:2879
+2022/04/16 13:04:44.166  [C] [config.go:197]  D:/go/src/net/http/server.go:1930
+2022/04/16 13:04:44.166  [C] [config.go:197]  D:/go/src/runtime/asm_amd64.s:1581
+2022/04/16 15:51:08.190  [C] [server.go:188]  ListenAndServe:  http: Server closed 7996

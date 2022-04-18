@@ -2,6 +2,130 @@ swagger: "2.0"
 info:
   title: plant_store
 paths:
+  /cart/:
+    get:
+      tags:
+      - cart
+      description: 查看购物车接口
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /cart/delete:
+    delete:
+      tags:
+      - cart
+      description: 删除购物车商品接口
+      parameters:
+      - in: query
+        name: id
+        description: id
+        required: true
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /cart/insert:
+    post:
+      tags:
+      - cart
+      description: 添加购物车接口
+      parameters:
+      - in: formData
+        name: id
+        description: 商品id
+        required: true
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /good/:
+    get:
+      tags:
+      - good
+      description: 获取所有商品接口
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /good/decrease:
+    get:
+      tags:
+      - good
+      description: 商品按价格降序排序接口
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /good/increase:
+    get:
+      tags:
+      - good
+      description: 商品按价格升序排序接口
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /good/select:
+    get:
+      tags:
+      - good
+      description: 模糊查询商品接口
+      parameters:
+      - in: query
+        name: name
+        description: 商品名
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
+  /user/change_info:
+    put:
+      tags:
+      - user
+      description: 修改用户信息接口
+      parameters:
+      - in: formData
+        name: email
+        description: 邮箱
+        type: string
+      - in: formData
+        name: phone
+        description: 电话
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/base.GeneralResponse'
+        "500":
+          description: '{object} base.GeneralResponse'
   /user/info:
     get:
       tags:
@@ -11,9 +135,9 @@ paths:
         "200":
           description: ""
           schema:
-            $ref: '#/definitions/models.Json'
+            $ref: '#/definitions/base.GeneralResponse'
         "500":
-          description: '{object} models.Json'
+          description: '{object} base.GeneralResponse'
   /user/login:
     post:
       tags:
@@ -32,9 +156,9 @@ paths:
         "200":
           description: ""
           schema:
-            $ref: '#/definitions/models.Json'
+            $ref: '#/definitions/base.GeneralResponse'
         "500":
-          description: '{object} models.Json'
+          description: '{object} base.GeneralResponse'
   /user/register:
     post:
       tags:
@@ -42,12 +166,12 @@ paths:
       description: 用户注册接口
       parameters:
       - in: formData
-        name: name1
-        description: 姓
+        name: username
+        description: 用户名
         type: string
       - in: formData
-        name: name2
-        description: 名
+        name: password
+        description: 密码
         type: string
       - in: formData
         name: email
@@ -55,30 +179,27 @@ paths:
         type: string
       - in: formData
         name: phone
-        description: 手机号码
-        type: string
-      - in: formData
-        name: password
-        description: 密码
+        description: 手机号
         type: string
       responses:
         "200":
           description: ""
           schema:
-            $ref: '#/definitions/models.Json'
+            $ref: '#/definitions/base.GeneralResponse'
         "500":
-          description: '{object} models.Json'
+          description: '{object} base.GeneralResponse'
 definitions:
-  165.0xc000384780.false:
+  451.0xc0002baed0.false:
     title: "false"
     type: object
-  models.Json:
-    title: Json
+  base.GeneralResponse:
+    title: GeneralResponse
     type: object
     properties:
+      code:
+        type: integer
+        format: int64
       data:
-        $ref: '#/definitions/165.0xc000384780.false'
-      flag:
-        type: boolean
+        $ref: '#/definitions/451.0xc0002baed0.false'
       message:
         type: string
