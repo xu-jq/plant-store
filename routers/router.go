@@ -48,6 +48,7 @@ func init() {
 	beego.Router("/good/select", &controllers.GoodsController{}, "get:SelectByName")
 	beego.Router("/good/increase", &controllers.GoodsController{}, "get:IncreasingOrder")
 	beego.Router("/good/decrease", &controllers.GoodsController{}, "get:DecreasingOrder")
+	beego.Router("/good/page", &controllers.GoodsController{}, "get:GetGoodsByPage")
 
 	//cart
 	beego.Router("/cart/insert", &controllers.CartController{}, "post:InsertGoods")

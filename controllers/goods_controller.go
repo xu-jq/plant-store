@@ -66,3 +66,14 @@ func (c *GoodsController) DecreasingOrder() {
 	}
 	c.ServeResponse(base.ErrOK, base.GeneralResponse{Data: goods})
 }
+
+func (c *GoodsController) GetGoodsByPage() {
+	pageSize, _ := c.GetInt("pageSize")
+	pageNum, _ := c.GetInt("pageNum")
+	goods, _, err := models.GetGoodsByPage(pageSize, pageNum)
+	if err != nil {
+		c.ServeResponse(base.ErrDatabase)
+		return
+	}
+	c.ServeResponse(base.ErrOK, base.GeneralResponse{Data: goods})
+}
