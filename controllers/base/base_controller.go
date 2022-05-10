@@ -113,3 +113,11 @@ func (c *BaseController) VerifyParams(obj interface{}) error {
 	}
 	return nil
 }
+
+func (c *BaseController) Itf(itf interface{}) string {
+	if itf == nil {
+		return ""
+	}
+	itfString := itf.(string)
+	return itfString
+}

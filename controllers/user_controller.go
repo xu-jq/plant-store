@@ -3,7 +3,8 @@ package controllers
 import (
 	"bee_project/controllers/base"
 	"bee_project/logics"
-	"bee_project/models"
+	"bee_project/messages"
+	"fmt"
 )
 
 type UserController struct {
@@ -12,28 +13,23 @@ type UserController struct {
 
 // UserRegister @Title 注册
 // @Description 用户注册接口
-// @Param name1 formData string false "姓"
-// @Param name2 formData string false "名"
-// @Param email formData string false "邮箱"
-// @Param phone formData string false "手机号码"
+// @Param username formData string false "用户名"
 // @Param password formData string false "密码"
-// @Success 200 {object} models.Json
-// @Failure 500 {object} models.Json
+// @Param email formData string false "邮箱"
+// @Param phone formData string false "手机号"
+// @Success 200 {object} base.GeneralResponse
+// @Failure 500 {object} base.GeneralResponse
 // @router /register [post]
 func (c *UserController) UserRegister() {
-	name1 := c.GetString("name1")
-	name2 := c.GetString("name2")
-	name := name1 + name2
-	user := models.User{
-		Username: name,
-		Email:    c.GetString("email"),
-		Phone:    c.GetString("phone"),
-		Password: c.GetString("pwd"),
+	request := messages.UserRegisterReq{}
+	if errResp := c.ParseForm(&request); errResp != nil {
+		c.ServeResponse(base.ErrParse)
+		return
 	}
-	ok, resp := logics.CreatNewUser(user)
-	c.Ctx.Output.JSON(resp, true, true)
+	fmt.Println("username:", request.Username)
+	ok := logics.CreatNewUser(request)
 	if !ok {
-		c.ServeResponse(base.ErrDatabase)
+		c.ServeResponse(base.ErrUser)
 		return
 	}
 	c.ServeResponse(base.ErrOK)
@@ -43,29 +39,71 @@ func (c *UserController) UserRegister() {
 // @Description 用户登录接口
 // @Param username formData string false "用户名"
 // @Param password formData string false "密码"
-// @Success 200 {object} models.Json
-// @Failure 500 {object} models.Json
+// @Success 200 {object} base.GeneralResponse
+// @Failure 500 {object} base.GeneralResponse
 // @router /login [post]
 func (c *UserController) UserLogin() {
-	user := models.User{Username: c.GetString("username"), Password: c.GetString("password")}
-	ok, resp := logics.UserLogin(user)
-	c.Ctx.Output.JSON(resp, true, true)
-	if !ok {
-		c.ServeResponse(base.ErrDatabase)
+	request := messages.UserLoginReq{}
+	err := c.ParseForm(&request)
+	if err != nil {
+		c.ServeResponse(base.ErrParse)
 		return
 	}
-	c.SetSession("user", user.Username)
-	c.GetSession("user")
+
+	ok := logics.UserLogin(request)
+	if !ok {
+		c.ServeResponse(base.ErrLogin)
+		return
+	}
+	err = c.SetSession("user", request.Username)
+	if err != nil {
+		return
+	}
 	c.ServeResponse(base.ErrOK)
 }
 
 // UserInfo @Title 获取用户信息
 // @Description 获取用户信息接口
-// @Success 200 {object} models.Json
-// @Failure 500 {object} models.Json
+// @Success 200 {object} base.GeneralResponse
+// @Failure 500 {object} base.GeneralResponse
 // @router /info [get]
 func (c *UserController) UserInfo() {
-	username := c.GetSession("user")
-	resp := logics.Info(username)
-	c.Ctx.Output.JSON(resp, true, true)
+	var itf interface{}
+	itf = c.GetSession("user")
+	if itf == nil {
+		c.ServeResponse(base.ErrGet)
+		return
+	}
+	username := itf.(string)
+	user, ok := logics.GetUserByName(username)
+	if !ok {
+		c.ServeResponse(base.ErrGet)
+		return
+	}
+	c.ServeResponse(base.ErrOK, base.GeneralResponse{Data: user})
+}
+
+// ChangeInfo @Title 修改用户信息
+// @Description 修改用户信息接口
+// @Param email formData string false "邮箱"
+// @Param phone formData string false "电话"
+// @Success 200 {object} base.GeneralResponse
+// @Failure 500 {object} base.GeneralResponse
+// @router /change_info [put]
+func (c *UserController) ChangeInfo() {
+	request := messages.UserUpdate{}
+	err := c.ParseForm(&request)
+	if err != nil {
+		c.ServeResponse(base.ErrParse)
+		return
+	}
+	var itf interface{}
+	itf = c.GetSession("user")
+	if itf == nil {
+		c.ServeResponse(base.ErrGet)
+		return
+	}
+	username := itf.(string)
+	logics.ChangeInfo(username, request)
+	c.ServeResponse(base.ErrOK)
 }

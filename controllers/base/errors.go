@@ -11,4 +11,8 @@ var (
 	ErrDatabase  = &GeneralResponse{Code: 1003, Message: "ErrDatabase"}
 	ErrNeedLogin = &GeneralResponse{Code: 1004, Message: "ErrNeedLogin"}
 	ErrCSRFToken = &GeneralResponse{Code: 1005, Message: "ErrCSRFToken"}
+	ErrUser      = &GeneralResponse{Code: 1006, Message: "用户名已存在"}
+	ErrLogin     = &GeneralResponse{Code: 1007, Message: "用户密码错误"}
+	ErrGet       = &GeneralResponse{Code: 1008, Message: "用户未登录"}
+	ErrParse     = &GeneralResponse{Code: 1009, Message: "获取参数错误"}
 )

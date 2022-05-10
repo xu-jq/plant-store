@@ -36,7 +36,7 @@ func UserLogin(user User) bool {
 	return true
 }
 
-func GetInfo(username interface{}) (User, error) {
+func GetUserByName(username string) (User, error) {
 	var user User
 	o := orm.NewOrm()
 	err := o.Raw("SELECT * FROM user WHERE username = ?", username).QueryRow(&user)
@@ -44,4 +44,12 @@ func GetInfo(username interface{}) (User, error) {
 		return user, err
 	}
 	return user, nil
+}
+
+func UpdateInfo(user User) {
+	o := orm.NewOrm()
+	err := o.Raw("UPDATE user SET email = ? , phone = ? WHERE username = ?", user.Email, user.Phone, user.Username).QueryRow(&user)
+	if err != nil {
+		return
+	}
 }

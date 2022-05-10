@@ -1,56 +1,83 @@
 package logics
 
 import (
-	"bee_project/models"
+	"bee_project/messages"
 	"github.com/beego/beego/v2/core/logs"
+
+	"bee_project/models"
 )
 
-func CreatNewUser(user models.User) (bool, models.Json) {
-	find := models.FindUserByName(user)
+func CreatNewUser(user messages.UserRegisterReq) bool {
+	newUser := models.User{
+		Username: user.Username,
+		Password: user.Password,
+		Email:    user.Email,
+		Phone:    user.Phone,
+	}
+	find := models.FindUserByName(newUser)
 	if find {
-		_, err := models.InsertUser(user)
+		_, err := models.InsertUser(newUser)
 		if err != nil {
 			logs.Warn("insert user failed, err: %s", err.Error())
-			resp := models.Json{Flag: false, Message: "insert user failed"}
-			return false, resp
+			return false
 		}
-		logs.Info("create user,username[%s]", user.Username)
-		resp := models.Json{Flag: true, Message: "insert user success"}
-		return true, resp
+		logs.Info("create user,username[%s]", newUser.Username)
+		return true
 	}
 	logs.Warn("用户名重复，注册失败")
-	resp := models.Json{Flag: false, Message: "用户名重复，注册失败"}
-	return false, resp
+	return false
 }
 
-func UserLogin(user models.User) (bool, models.Json) {
-	login := models.UserLogin(user)
+func UserLogin(user messages.UserLoginReq) bool {
+	loginUser := models.User{
+		Username: user.Username,
+		Password: user.Password,
+	}
+	login := models.UserLogin(loginUser)
 	if login {
-		logs.Info("login success,username[%s]", user.Username)
-		resp := models.Json{Flag: true, Message: "登录成功"}
-		return true, resp
+		logs.Info("login success,username[%s]", loginUser.Username)
+		return true
 	}
 	logs.Warn("login failed")
-	resp := models.Json{Flag: false, Message: "登录失败"}
-	return false, resp
+	return false
 }
 
-func Info(username interface{}) models.Json {
-	user, err := models.GetInfo(username)
+func CheckLogin(username string) bool {
+	user, err := models.GetUserByName(username)
+	if err != nil || user.Id == 0 || user.Username == "" {
+		return false
+	}
+	return true
+}
+
+func GetUserByName(username string) (user models.User, bool bool) {
+	user, err := models.GetUserByName(username)
 	if err != nil || user.Id == 0 {
 		logs.Warn("get user info failed")
-		resp := models.Json{
-			Flag:    false,
-			Message: "请先登录",
-			Data:    user,
-		}
-		return resp
+		return user, false
 	}
 	logs.Info("get user info success,username[%s]", username)
-	resp := models.Json{
-		Flag:    true,
-		Message: "get user info success",
-		Data:    user,
+	return user, true
+}
+
+func ChangeInfo(username string, request messages.UserUpdate) bool {
+	login := CheckLogin(username)
+	if !login {
+		return false
 	}
-	return resp
+	oldUser, _ := models.GetUserByName(username)
+	newUser := models.User{}
+	if request.Phone == "" {
+		newUser.Phone = oldUser.Phone
+	} else {
+		newUser.Phone = request.Phone
+	}
+	if request.Email == "" {
+		newUser.Email = oldUser.Email
+	} else {
+		newUser.Email = request.Email
+	}
+	newUser.Username = username
+	models.UpdateInfo(newUser)
+	return true
 }
